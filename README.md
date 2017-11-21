@@ -5,6 +5,6 @@ The State Administrative Tribunal of Western Australia tasked me with reconceptu
 
 Created by Jayden Muzzin. 2017. 
 My main account can be viewed here: https://github.com/jaydenmuzzin
-My portfolio can be viewed here: www.jaydenmuzzin.com
+My portfolio can be viewed here: https://www.jaydenmuzzin.com
 
 Please read and recognise the license of this work detailed in the LICENSE.md file.
