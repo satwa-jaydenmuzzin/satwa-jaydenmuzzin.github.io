@@ -85,6 +85,10 @@ p {
   transform: translate(0, 0.5em);
 }
 
+.options-mobile {
+  letter-spacing: normal;
+}
+
 .search {
   color: #fc8239;
   font-family: 'Quicksand', sans-serif;
@@ -128,6 +132,20 @@ p {
   color: #faf8cc;
 }
 
+.search-link-mobile, .search-bar-mobile {
+  display: block;
+  padding: 0.75em;
+}
+
+.search-mobile {
+  float: none;
+  padding: 0;
+}
+
+.search-bar-mobile input {
+  width: 50vw;
+}
+
 .tools {
   display: inline-block;
   float: right;
@@ -151,6 +169,12 @@ p {
   cursor: pointer;
   display: inline-block;
   margin-left: 5vw;
+}
+
+.tools-mobile {
+  float: none;
+  margin: 0;
+  padding: 0.75em;
 }
 
 #primary-nav {
@@ -348,10 +372,33 @@ nav .primary-menu span {
 
 .summary-cont {
   background-color: #d7eff2;
+  padding: 3vh;
+}
+
+.bulletins-summary-cont {
+  background-color: #d7eff2;
   font-size: 1.2em;
   line-height: 5vh;
   padding: 3% 22%;
   text-align: center;
+}
+
+.summary {
+  font-family: 'Corbel', 'Quattrocento Sans', sans-serif !important;
+  font-size: 1.2em;
+  line-height: 5vh;
+  margin: 0;
+  padding: 3vh 3vw;
+}
+
+.summary-video-cont {
+  margin: auto;
+}
+
+.summary-video-cont iframe {
+  min-height: 400px;
+  height: 100%;
+  width: 100%;
 }
 
 .common-link-desc-cont {
@@ -794,7 +841,7 @@ footer nav ul li a:hover {
   }
 
   ul.primary-menu li ul.sub, ul.primary-menu li ul.sub ul {
-    border: 0.25em solid /* #fc8239 */ #0d3149 ;
+    border: 0.25em solid /* #fc8239 #0d3149 */  #faf8cc;
     position: static;
     width: 100%;
   }
@@ -816,7 +863,11 @@ footer nav ul li a:hover {
   }
 
   .summary-cont {
-    padding: 3% 11%;
+    text-align: center;
+  }
+
+  .summary-cont div {
+    margin: 2vh 0;
   }
 
   .common-link-cont {
@@ -842,5 +893,19 @@ footer nav ul li a:hover {
 
   .bulletins-cont > p {
     padding: 5% 10% 2%;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 35.5em) {
+  .summary-video-cont iframe {
+    min-height: 240px;
+  }
+}
+
+@media screen and (max-height: 25em) {
+  .summary {
+    font-size: 100%;
+    line-height: 2;
   }
 }
