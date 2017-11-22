@@ -7,4 +7,8 @@ Created by Jayden Muzzin. 2017.
 My main account can be viewed here: https://github.com/jaydenmuzzin
 My portfolio can be viewed here: https://www.jaydenmuzzin.com
 
-Please read and recognise the license of this work detailed in the LICENSE.md file.
+SAT video created by Tim Angeles (https://timangeles.com/). 2017. SAT – MOTION GRAPHIC. Permission granted by Tim. 
+
+Narration by Sam Ackland (http://samacklandillustration.com).
+
+Please read and recognise the license of this work detailed in the LICENSE.md file, as well as that of the SAT video placed on it by its makers.
