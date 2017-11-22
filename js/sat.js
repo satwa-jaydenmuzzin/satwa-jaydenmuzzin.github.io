@@ -2,26 +2,17 @@
 
 $(document).ready(function(){
 
-  if ($(window).width() <= 768) {
-    $(".options-mobile").show();
-  } else {
-    $(".options-mobile").hide();
-  }
-
   // Responsive - Edits menu and display based on small screen size detection
-  // On window load doesn't fire for showing the mobile search options so is duplicated (as seen above) to fire after document is ready. Needs fix.
-  $(window).on("load resize", function() {
+  $(window).on("load resize", (function() {
     if ($(window).width() <= 768) {
       $("span.fa").removeClass("fa-close").addClass("fa-bars");
-      $(".options-mobile").show();
     } else {
       if ($(".primary-menu").hasClass("show-mobile")) {
           $(".primary-menu").removeClass("show-mobile");
           $(".primary-menu > li").addClass("pure-u-md-1-7");
       }
-      $(".options-mobile").hide();
     }
-  });
+  }));
 
    // Open and close menu
    $(".mobile-nav-trigger").on("click", function(){
@@ -31,7 +22,7 @@ $(document).ready(function(){
    });
 
 
-   // Shows the user which menus are currently open
+   // Shows the user which menus are currently open 
    $(".primary-menu ul").hover(function(){
        $(this).parent().css("background-color", "#faf8cc");
      }, function(){
